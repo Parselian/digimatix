@@ -1,0 +1,112 @@
+.form {
+  &__input {
+    &-wrap {
+      margin: 0;
+      padding-top: 0;
+      width: 100%;
+      max-width: 254px;
+      height: 70px;
+      text-align: left;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid $form-input-border-color;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+
+      &_active {
+        border-color: $form-focus-color;
+
+        .form {
+          &__input {
+            &-wrap {
+              height: 72px;
+            }
+            &-label {
+              margin-left: 10px;
+              padding-left: 16px;
+              padding-right: 16px;
+              font-size: 12px;
+              line-height: 0;
+            }
+
+            color: $form-focus-color;
+
+            &::-webkit-input-placeholder {
+              color: $form-focus-color;
+              font-size: 0;
+            }
+            &::-moz-placeholder {
+              color: $form-focus-color;
+              font-size: 0;
+            }
+            &:-moz-placeholder {
+              color: $form-focus-color;
+              font-size: 0;
+            }
+            &:-ms-input-placeholder {
+              color: $form-focus-color;
+              font-size: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-label {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+
+    position: relative;
+    top: 0;
+    padding-left: 24px;
+    width: calc(100% - 26px);
+    height: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $alt-text-color;
+    background-color: transparent;
+    border: none;
+    transition: .2s;
+
+    &::-webkit-input-placeholder {
+      color: $alt-text-color;
+    }
+
+    &::-moz-placeholder {
+      color: $alt-text-color;
+    }
+
+    &:-moz-placeholder {
+      color: $alt-text-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $alt-text-color;
+    }
+
+    &:focus {
+      outline: none;
+
+      .form {
+        &__input {
+          &-wrap {
+            border-color: red;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding: 24px 80px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

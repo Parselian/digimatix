@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: $main-text-color;
+  &__button {
+      padding: 8px 12px;
+    &-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      fill: $accent-color;
+    }
+  }
+}

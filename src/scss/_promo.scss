@@ -45,7 +45,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    overflow-y: clip;
+    clip: rect(auto, 2000px, auto, auto);
     &-schevrones {
       position: absolute;
       top: -13%;

@@ -12,7 +12,7 @@ const {src, dest, series, watch} = require('gulp'),
 
 function html() {
     return src('src/**.html')
-        .pipe(htmlmin({collapseWhitespace : true}))
+        .pipe(htmlmin({collapseWhitespace : false}))
         .pipe(dest('build/'))
 }
 

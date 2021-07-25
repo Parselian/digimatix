@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<title>DIGIMATIX</title>
 </head>
 <body>
@@ -145,20 +141,20 @@
 			Задача организации, в особенности же курс на социально-ориентированный национальный проект позволяет оценить значение модели
 			развития.
 		</div>
-		<form action="#" methos="POST" class="form faq__form">
+		<form action="#" method="POST" class="form faq__form">
 			<fieldset class="form__input-wrap faq__form-input-wrap">
-				<input type="text" class="form__input" name="user_name" placeholder="Имя">
 				<legend class="form__input-label">Имя</legend>
+				<input type="text" class="form__input" name="user_name" placeholder="Имя">
 			</fieldset>
 
 			<fieldset class="form__input-wrap faq__form-input-wrap">
-				<input type="text" class="form__input" name="user_phone" placeholder="Телефон" required>
 				<legend class="form__input-label">Телефон</legend>
+				<input type="text" class="form__input" name="user_phone" placeholder="Телефон" required>
 			</fieldset>
 
 			<fieldset class="form__input-wrap faq__form-input-wrap">
+				<legend class="form__input-label">Email</legend>
 				<input type="text" class="form__input" name="user_email" placeholder="Email">
-				<legend class="form__input-label" required>Email</legend>
 			</fieldset>
 
 			<button class="button button_alt form__button faq__form-button">Отправить</button>
@@ -179,8 +175,19 @@
 	</footer>
 </section>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
+<script defer src="js/polyfills.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<!--CHECKING BROWSER VERSION-->
+<script>
+
+</script>
 </body>
 </html>
